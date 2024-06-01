@@ -17,3 +17,9 @@ console.log(b["task"]);*/
 
  //Create a terminal clock (HH:MM:SS)
 
+let s = "shiva";
+console.log(s[0]);  
+s[0] = "p";
+console.log(s);
+
+ 
