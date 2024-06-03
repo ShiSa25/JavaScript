@@ -35,4 +35,11 @@ const todoSchema = new mongoose.Schema({
     days: Number
 });
 
+const todoSchema2 = new mongoose.Schema({
+    title: {type: Number, required: true, default: "hey"},
+    desc: String,
+    isDone: Boolean,
+    days: Number
+});
+
 export const Todo = mongoose.model('Todo', todoSchema);
