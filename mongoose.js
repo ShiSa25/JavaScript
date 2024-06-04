@@ -35,7 +35,7 @@ const todoSchema = new mongoose.Schema({
     days: Number
 });
 
-const todoSchema2 = new mongoose.Schema({
+const todoSchema3 = new mongoose.Schema({
     title: {type: Number, required: true, default: "hey"},
     desc: String,
     isDone: Boolean,
