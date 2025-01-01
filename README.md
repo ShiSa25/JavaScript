@@ -1,4 +1,2 @@
 # JavaScript
- all of my js
-    
-write all your stuff here
+This is a repo of all my js code.
