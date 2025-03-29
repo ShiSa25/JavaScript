@@ -31,3 +31,24 @@ while (num != 100) {
 }*/
 
 //func to find mean of 5 nums
+
+
+// let allUsers = [{
+//     firstName: 'shiva',
+//     gender: 'male'
+// }, {
+//     firstName: 'sid',
+//     gender: "male"
+// }, {
+//     firstName: 'betu',
+//     gender: 'femaale'
+// }]
+
+// for (let i = 0; i < allUsers.length; i++) {
+//     if (allUsers[i]['gender'] == 'male') {
+//         console.log(allUsers[i]['firstName'])
+//     }    
+// }
+
+
+
