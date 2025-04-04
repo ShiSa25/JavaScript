@@ -1,4 +1,4 @@
-//js code to take input of a number in nodejs
+//js code to take input of a number in node.js
 // alert, confirm, prompt
 //ES14--2023
 //variables => let var and const and how to name them 
@@ -21,5 +21,3 @@ let s = "shiva";
 console.log(s[0]);  
 s[0] = "p";
 console.log(s);
-
- 

@@ -105,3 +105,4 @@ while (num != 100) {
 
 //ternary operator and nested ternary operator and switch cases
 console.log(typeof(x));
+console.log(typeof(y));
