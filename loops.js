@@ -22,7 +22,7 @@
 // console.log(sum);
 
 //code to generate fibonacci series
-function fibonacci(n) {
+function fibonacciNo(n) {
     let a = 0;
     let b = 1;
     let c;
@@ -35,4 +35,4 @@ function fibonacci(n) {
         b = c;
     }
 }
-fibonacci(10);
+fibonacciNo(10);

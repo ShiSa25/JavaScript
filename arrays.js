@@ -3,7 +3,7 @@
 // 1. Array Creation
 console.log('=== Array Creation ===');
 const numbers = [1, 2, 3, 4, 5];                    // Array literal
-const fruits = new Array('apple', 'banana', 'orange'); // Array constructor
+const fruits = ['apple', 'banana', 'orange']; // Array constructor
 const mixed = [1, 'hello', true, null, { name: 'John' }]; // Mixed data types
 const matrix = [[1, 2], [3, 4]];                    // Nested array
 

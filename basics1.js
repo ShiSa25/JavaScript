@@ -21,3 +21,4 @@ let s = "shiva";
 console.log(s[0]);  
 s[0] = "p";
 console.log(s);
+
