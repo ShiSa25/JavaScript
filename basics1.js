@@ -22,3 +22,7 @@ console.log(s[0]);
 s[0] = "p";
 console.log(s);
 
+//double ternary operator condition checking if you can vote or not
+let age = 18;
+console.log(age>18 ? "you can vote" : "you can't vote");
+
