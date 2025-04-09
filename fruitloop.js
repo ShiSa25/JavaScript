@@ -17,12 +17,4 @@ switch (fruit) {
 
 console.log(fruit);
 
-if (fruit == "apple") {
-    console.log("this is apple");
-} else if (fruit == "mango") {
-    console.log("this is mango");
-} else if (fruit == "banana") {
-    console.log("this is banana");
-} else {
-    console.log("this is default");
-}
+
