@@ -18,3 +18,9 @@ switch (fruit) {
 console.log(fruit);
 
 
+
+//write a function to find mean of 5 numbers
+function mean(a, b, c, d, e) {
+    return (a + b + c + d + e) / 5;
+}
+
