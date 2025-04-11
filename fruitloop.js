@@ -24,3 +24,13 @@ function mean(a, b, c, d, e) {
     return (a + b + c + d + e) / 5;
 }
 
+//code to print perfect numbers from 1 to 1000
+function isPerfectNumber(num) {
+    let sum = 0;
+    for (let i = 1; i < num; i++) {
+        if (num % i === 0) {
+            sum += i;
+        }
+    }
+    return sum === num;
+}
