@@ -34,3 +34,28 @@ function isPerfectNumber(num) {
     }
     return sum === num;
 }
+
+for (let i = 1; i <= 1000; i++) {
+    if (isPerfectNumber(i)) {
+        console.log(i);
+    }
+}
+
+//code to print prime numbers from 1 to 1000
+function isPrime(num) {
+    if (num <= 1) {
+        return false;
+    }
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+for (let i = 1; i <= 1000; i++) {
+    if (isPrime(i)) {
+        console.log(i);
+    }
+}
