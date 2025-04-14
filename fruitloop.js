@@ -59,3 +59,21 @@ for (let i = 1; i <= 1000; i++) {
         console.log(i);
     }
 }
+
+//code to print armstrong numbers from 1 to 1000
+function isArmstrong(num) {
+    let sum = 0;
+    let temp = num;
+    while (temp > 0) {
+        let digit = temp % 10;
+        sum += digit ** 3;
+        temp = Math.floor(temp / 10);
+    }
+    return sum === num;
+}
+
+for (let i = 1; i <= 1000; i++) {
+    if (isArmstrong(i)) {
+        console.log(i);
+    }
+}
