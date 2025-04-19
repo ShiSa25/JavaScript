@@ -152,4 +152,4 @@ library.addBook("1984", "George Orwell");
 library.addBook("The Hobbit", "J.R.R. Tolkien");
 console.log(library.getAllBooks());
 
-//code to write
+//code to write a function to find exponent of a number
