@@ -152,4 +152,13 @@ library.addBook("1984", "George Orwell");
 library.addBook("The Hobbit", "J.R.R. Tolkien");
 console.log(library.getAllBooks());
 
-//code to write a function to find exponent of a number
+//code to print star pattern
+for (let i = 1; i <= 5; i++) {
+    let str = "";
+    for (let j = 1; j <= i; j++) {
+        str += "*";
+    }
+    console.log(str);
+}
+
+
