@@ -161,4 +161,9 @@ for (let i = 1; i <= 5; i++) {
     console.log(str);
 }
 
+//function to write mobile regex
+function isMobileNumberValid(number) {
+    const regex = /^\+91\d{10}$/;
+    return regex.test(number);
+}
 
