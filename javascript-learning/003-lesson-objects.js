@@ -168,10 +168,12 @@ function isMobileNumberValid(number) {
 }
 
 //code to fetch data from api
-// const fetch = require('node-fetch');
-// fetch('https://jsonplaceholder.typicode.com/todos/1')
-//     .then(response => response.json())
-//     .then(json => console.log(json));
+const fetch = require('node-fetch');
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+    .then(response => response.json())
+    .then(json => console.log(json));
 
-//convert the json to string
+//code to convert date to string
+const date = new Date();
+console.log(date.toString());
 
