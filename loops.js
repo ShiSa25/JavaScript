@@ -22,17 +22,17 @@
 // console.log(sum);
 
 //code to generate fibonacci series
-function fibonacciNo(n) {
-    let a = 0;
-    let b = 1;
-    let c;
-    console.log(a);
-    console.log(b);
-    for (let i = 2; i < n; i++) {
-        c = a + b;
-        console.log(c);
-        a = b;
-        b = c;
-    }
-}
-fibonacciNo(10);
+// function fibonacciNo(n) {
+//     let a = 0;
+//     let b = 1;
+//     let c;
+//     console.log(a);
+//     console.log(b);
+//     for (let i = 2; i < n; i++) {
+//         c = a + b;
+//         console.log(c);
+//         a = b;
+//         b = c;
+//     }
+// }
+// fibonacciNo(10);

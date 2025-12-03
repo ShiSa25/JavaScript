@@ -53,7 +53,7 @@ while (num != 100) {
 // console.log('1'%5);
 // console.log(1+'1');
 
- const prompt = require('prompt-sync')();
+// const prompt = require('prompt-sync')();
 // let age = prompt("what is your age");
 // age = Number(age);
 // console.log(age);
@@ -104,5 +104,5 @@ while (num != 100) {
 // console.log(bill);
 
 //ternary operator and nested ternary operator and switch cases
-console.log(typeof(x));
-console.log(typeof(y));
+// console.log(typeof(x));
+// console.log(typeof(y));
