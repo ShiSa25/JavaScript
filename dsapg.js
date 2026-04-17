@@ -224,3 +224,83 @@
 //     console.log((ncopy<0) ? -rev : rev);
 // }
 
+//remove duplicates from a non decreasing array
+
+// function removeDuplicates(nums) {
+//     let x = 0;
+//     for (let i = 0; i < nums.length; i++) {
+//         if (nums[i] > nums[x]) {
+//             x= x + 1;
+//             nums[x] = nums[i];
+//         }
+//     }
+//     return x+1;
+// }
+
+// let nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
+
+// let res = removeDuplicates(nums);
+
+// console.log(res);
+// console.log(nums);
+
+// program to remove a certain element from an array
+
+// function removeElement(nums, val) {
+//     let x = 0;
+//     for (let i = 0; i < nums.length; i++) {
+//         if (nums[i] !== val) {
+//             nums[x] = nums[i];
+//             x++;
+//         }
+//     }
+//     return x;
+// }
+ 
+// let nums = [3, 1, 3, 4, 3 , 3, 5, 5];
+// let val = 3;
+
+// let res = removeElement(nums, val);
+
+// console.log(res);
+// console.log(nums);
+
+// program to reverse an array string
+
+// function reverseString(s) {
+//     let len = s.length;
+//     let halflen = Math.floor(len/2);
+    
+//     for (let i = 0; i < halflen ; i++) {
+//         let temp = s[i];
+//         s[i] = s[len - 1 -i];
+//         s[len -1 - i] = temp;
+//     }
+// }
+
+// let s = ["h", "e", "l", "l", "o"];
+
+// reverseString(s);
+// console.log(s);
+
+//program to book max profit in a stock price array
+
+// function maxProfit(prices) {
+//     let min = prices[0];
+//     let maxProfit = 0;
+//     for (let i = 0; i < prices.length; i++) {
+//         if (prices[i]-min > maxProfit) {
+//             maxProfit = prices[i] - min;
+//         }
+//         if (prices[i] < min) {
+//             min = prices[i];
+//         }
+//     }
+//     return maxProfit;
+// }
+
+// let prices = [7, 1, 5, 3, 6, 4];
+
+// let res = maxProfit(prices);
+
+// console.log(res);
