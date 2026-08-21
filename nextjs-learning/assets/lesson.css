@@ -1,0 +1,260 @@
+:root {
+  --bg: #f7f4ef;
+  --ink: #1c1917;
+  --muted: #57534e;
+  --accent: #0f766e;
+  --accent-soft: #ccfbf1;
+  --warn: #9a3412;
+  --warn-soft: #ffedd5;
+  --ok: #166534;
+  --ok-soft: #dcfce7;
+  --line: #d6d3d1;
+  --card: #fffdf9;
+  --serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", "SF Mono", ui-monospace, monospace;
+  --max: 42rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 500px at 10% -10%, #d8efe9 0%, transparent 55%),
+    radial-gradient(900px 400px at 100% 0%, #f5e6d3 0%, transparent 50%),
+    var(--bg);
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.15em;
+}
+
+.wrap {
+  width: min(100% - 2rem, var(--max));
+  margin-inline: auto;
+  padding: 2.5rem 0 4rem;
+}
+
+header.site {
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.4rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--serif);
+  line-height: 1.25;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
+
+h2 {
+  font-size: 1.45rem;
+  margin-top: 2.25rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  margin-top: 1.5rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+.lede {
+  font-size: 1.15rem;
+  color: var(--muted);
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0.75rem 0 0;
+}
+
+.callout {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  padding: 1rem 1.1rem;
+  margin: 1.25rem 0;
+}
+
+.callout.warn {
+  border-left-color: var(--warn);
+  background: linear-gradient(90deg, var(--warn-soft), var(--card) 40%);
+}
+
+.callout.ok {
+  border-left-color: var(--ok);
+  background: linear-gradient(90deg, var(--ok-soft), var(--card) 40%);
+}
+
+.callout p:last-child {
+  margin-bottom: 0;
+}
+
+pre,
+code {
+  font-family: var(--mono);
+}
+
+code {
+  font-size: 0.9em;
+  background: #efebe6;
+  padding: 0.1em 0.35em;
+  border-radius: 0.25rem;
+}
+
+pre {
+  background: #1c1917;
+  color: #f5f5f4;
+  padding: 1rem 1.1rem;
+  overflow-x: auto;
+  border-radius: 0.4rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+ul,
+ol {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  margin: 1rem 0 1.5rem;
+  background: var(--card);
+}
+
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 0.55rem 0.65rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #efebe6;
+  font-weight: 600;
+}
+
+.quiz {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 1.1rem;
+  margin: 1.5rem 0;
+}
+
+.quiz h3 {
+  margin-top: 0;
+}
+
+.quiz-options {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0.75rem 0 0;
+}
+
+.quiz button {
+  font: inherit;
+  text-align: left;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--line);
+  background: #fff;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+.quiz button:hover {
+  border-color: var(--accent);
+}
+
+.quiz button[aria-pressed="true"] {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.quiz button.correct {
+  background: var(--ok-soft);
+  border-color: var(--ok);
+}
+
+.quiz button.incorrect {
+  background: var(--warn-soft);
+  border-color: var(--warn);
+}
+
+.quiz .feedback {
+  margin-top: 0.85rem;
+  min-height: 1.4em;
+  color: var(--muted);
+}
+
+.links {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.footer-note {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: var(--accent-soft);
+  border-radius: 0.35rem;
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .quiz button {
+    break-inside: avoid;
+  }
+}
