@@ -118,3 +118,34 @@ const findMode = (arr) => {
     }
     return mode;
 };
+
+//function to find the range of an array
+const findRange = (arr) => {
+    let range = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > range) {
+            range = arr[i];
+        }
+    }
+    return range;
+};
+
+//function to find the mode of an array
+const findMode = (arr) => {
+    let mode = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > mode) {
+            mode = arr[i];
+        }
+    }
+    return mode;
+};
+
+//function to manipulate strings in an array
+const manipulateStrings = (arr) => {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        newArr.push(arr[i].toUpperCase());
+    }
+    return newArr;
+};
