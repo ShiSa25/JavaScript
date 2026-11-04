@@ -36,3 +36,24 @@ const displayResults = (score1, score2) => {
     console.log("Lowest score: ", pickLowestScore(score1, score2));
     console.log("Difference: ", calculateDifference(score1, score2));
 };
+
+//function to write a new function to check if a number is even or odd 
+const checkEvenOdd = (number) => {
+    if (number % 2 === 0) {
+        return "Even";
+    }
+    return "Odd";
+};
+
+//function to calculate the factorial of a number
+const calculateFactorial = (number) => {
+    if (number === 0) {
+        return 1;
+    }
+    return number * calculateFactorial(number - 1);
+};
+
+//function to reverse a string
+const reverseString = (str) => {
+    return str.split('').reverse().join('');
+};
