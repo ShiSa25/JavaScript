@@ -130,17 +130,6 @@ const findRange = (arr) => {
     return range;
 };
 
-//function to find the mode of an array
-const findMode = (arr) => {
-    let mode = arr[0];
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] > mode) {
-            mode = arr[i];
-        }
-    }
-    return mode;
-};
-
 //function to manipulate strings in an array
 const manipulateStrings = (arr) => {
     let newArr = [];
@@ -148,4 +137,9 @@ const manipulateStrings = (arr) => {
         newArr.push(arr[i].toUpperCase());
     }
     return newArr;
+};
+
+// function to sort strings alphabetically
+const sortStrings = (arr) => {
+    return arr.sort();
 };
