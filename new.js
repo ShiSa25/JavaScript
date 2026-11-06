@@ -143,3 +143,23 @@ const manipulateStrings = (arr) => {
 const sortStrings = (arr) => {
     return arr.sort();
 };
+
+//function to sort min to max
+const sortMinToMax = (arr) => {
+    return arr.sort((a, b) => a - b);
+};
+
+//function to sort max to min
+const sortMaxToMin = (arr) => {
+    return arr.sort((a, b) => b - a);
+};
+
+//function to arrays sorted min to max
+const sortArrays = (arr1, arr2) => {
+    return arr1.concat(arr2).sort((a, b) => a - b);
+};
+
+//function to remove duplicates from an array
+const removeDuplicates = (arr) => {
+    return arr.filter((item, index) => arr.indexOf(item) === index);
+};
